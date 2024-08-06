@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts 'destroying existing DB'
+Task.destroy_all
+
+puts 'creating tasks'
+Task.create!(title: "Laundry", details: "Do not mix colors!")
+Task.create!(title: "Studying", details: "A lot of flashcards to do", completed: true)
+puts 'created two tasks'

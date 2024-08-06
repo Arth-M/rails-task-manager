@@ -1,0 +1,14 @@
+<div class="container">
+  <%= form_with model: @task, :html => {:class => 'form'}, method: :post do |form| %>
+  <div>
+    <p><%= form.label :title, "Title" %></p>
+    <%= form.text_field :title %>
+    <p><%= form.label :details, "Details" %></p>
+    <%= form.text_field :details %>
+    </div>
+    <div id="btn-right">
+    <%= form.submit "Add this task", class: 'btn' %>
+    </div>
+  <% end %>
+  <%= link_to 'Back to tasks', tasks_path, class: 'btn' %>
+</div>

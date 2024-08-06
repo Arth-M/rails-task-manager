@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-size: 30;
+  font-family: 'Comic Sans MS';
+  background-color: rgb(240, 230, 230);
+ }
+
+ .container {
+  width: 45%;
+  margin: 25px auto;
+  background-color: white;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+ }
+
+ .task-flex {
+  display: flex;
+  align-items: center;
+ }
+
+ .task-flex > #completed {
+  flex: 0.5;
+ }
+
+ .task-flex > #task-name {
+  flex: 2;
+ }
+
+ .task-flex > p {
+  margin-bottom: 50px;
+ }
+
+ .btn {
+  background-color: rgb(89, 89, 194);
+  border: 1px solid rgb(89, 89, 194);
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border-radius: 5px;
+ }
+
+ .btn:hover {
+  background-color: white;
+  color: rgb(89, 89, 194);
+  transition: 0.3s ease;
+ }
+
+ .links {
+  /* background-color: rgba(111, 206, 238, 0.3); */
+  background: linear-gradient(to right, rgba(111, 206, 238, 0.3), white);
+  text-decoration: none;
+  color: rgb(155, 145, 145);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+ }
+
+ .links:hover {
+  background: white;
+  color: rgb(111, 206, 238);
+  transition: 0.3s ease;
+ }
+
+ .form {
+  margin: 25px;
+  display: flex;
+  align-items: center
+ }
+
+ #btn-right {
+  text-align: right;
+ }
